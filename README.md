@@ -95,7 +95,7 @@ Business Implication: Evaluate pricing or service quality for international plan
 
 **4. Voice Mail Plan vs Churn**
 
-![alt text](Imahes/image-3.png)
+![alt text](Images/image-3.png)
 
 Insight: Customers with a voice mail plan were less likely to churn.
 
