@@ -1,6 +1,25 @@
 # PROJECT TITLE : PREDICTING CUSTOMER CHURN FOR SYRIATEL
 
 
+# PROJECT OVERVIEW
+In the highly competitive telecommunications sector, retaining existing customers is just as crucial—if not more—than acquiring new ones. SyriaTel, like many telecom providers, faces significant revenue loss due to customer churn—the rate at which customers discontinue their service. Identifying customers who are likely to leave and understanding the factors driving that decision is key to improving retention strategies and optimizing service delivery.
+
+This project aims to build a predictive machine learning classifier that accurately forecasts whether a customer is likely to churn (i.e., stop doing business with SyriaTel). Using a curated dataset of customer demographics, service usage, billing patterns, and support interactions,I conducted a detailed exploratory data analysis (EDA) and develop predictive models to uncover actionable insights.
+
+By detecting churn early, SyriaTel can proactively engage at-risk customers, implement tailored offers, and improve overall customer satisfaction—ultimately reducing churn rates and protecting long-term revenue.
+
+
+# BUSINESS UNDERSTANDING
+In the telecom industry, customer retention is a critical business priority due to the high cost of acquiring new customers compared to maintaining existing ones. For SyriaTel, a leading telecommunications provider, customer churn—the percentage of users who stop using the service—is a significant challenge impacting revenue and long-term growth.
+
+Understanding why customers churn and being able to predict who is likely to leave offers a major strategic advantage. If SyriaTel can identify at-risk customers early, it can take proactive measures such as:
+
+Offering targeted promotions or personalized plans,
+
+Improving service quality based on user feedback,
+
+Enhancing customer support for high-risk segments.
+
 # PROBLEM STATEMENT
 In today’s highly competitive telecommunications sector, customers have a wide array of service providers to choose from, making customer loyalty increasingly fragile. A single poor experience can shape a customer’s perception of an entire brand, highlighting the critical importance of customer satisfaction in retaining users. With communication services deeply embedded in our daily routines, minimizing customer churn has become a strategic priority for telecom companies.
 
@@ -9,7 +28,7 @@ Customer churn, defined as the rate at which subscribers discontinue or fail to 
 By leveraging predictive modeling and generating actionable insights, telecom firms can proactively address churn risks and strengthen customer relationships—ensuring long-term business sustainability and growth.
 
 
-# METHODOLOGY
+# DATA UNDERSTANDING
 **1. Data Collection and Preparation**
 Dataset: Used SyriaTel's dataset containing 3,333 customer records with 21 features including demographics, service usage, call durations, and plan subscriptions.
 
@@ -76,7 +95,7 @@ The number of customers who did not churn is significantly higher than the numbe
 
 Business Implication: Though relatively low, this segment represents potential revenue loss if not addressed proactively.
 
-**2. Churn by Customer Service Calls**
+**2. Churn by Number of Customer Service Calls**
 
 ![alt text](Images/image-1.png)
 
@@ -85,7 +104,7 @@ Insight: Customers with more customer service calls were significantly more like
 Business Implication: High support interactions may signal unresolved issues or dissatisfaction. These customers should be flagged for escalation and follow-up.
 
 
-**3. International Plan vs Churn**
+**3. Churn by International Plan**
 
 ![alt text](Images/image-2.png)
 
@@ -93,7 +112,7 @@ Insight: Customers with an international plan showed a higher likelihood of chur
 
 Business Implication: Evaluate pricing or service quality for international plans; dissatisfaction may be driving customers away.
 
-**4. Voice Mail Plan vs Churn**
+**4. Churn by Voice Mail Plan**
 
 ![alt text](Images/image-3.png)
 
@@ -101,7 +120,7 @@ Insight: Customers with a voice mail plan were less likely to churn.
 
 Business Implication: The voice mail plan might contribute to perceived value or satisfaction; upselling this feature could help retention.
 
-**5. Total Day Minutes and Charges**
+**5. Total Day Minutes vs Total Day Charges by Churn Status**
 
 ![alt text](Images/image-4.png)
 
@@ -110,7 +129,7 @@ Insight: Churned customers often had higher day-time minutes and charges, possib
 
 Business Implication: Consider personalized billing options or rewards for heavy users to retain them.
 
-**Boxplot – International Charges by Churn**
+**6. International Charges by Churn**
 
 ![alt text](Images/image-5.png)
 
@@ -119,7 +138,7 @@ Insight: Churned customers had a higher average of international charges.
 Business Implication: Customers may be leaving due to cost concerns related to international calling. Introducing flexible pricing or bundling options could mitigate churn.
 
 
-**Heatmap of Feature Means by Churn Group**
+**7. Correlation Heatmap**
 
 ![alt text](Images/image-6.png)
 
