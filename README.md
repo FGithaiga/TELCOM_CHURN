@@ -1,15 +1,13 @@
-# PROJECT TITLE : PREDICTING CUSTOMER CHURN FOR SYRIATEL
+# PROJECT TITLE :  SYRIALTEL CUSTOMER CHURN PREDICTION
 
 
 # PROJECT OVERVIEW
-In the highly competitive telecommunications sector, retaining existing customers is just as crucial—if not more—than acquiring new ones. SyriaTel, like many telecom providers, faces significant revenue loss due to customer churn—the rate at which customers discontinue their service. Identifying customers who are likely to leave and understanding the factors driving that decision is key to improving retention strategies and optimizing service delivery.
+This project builds a machine learning model to predict customer churn for SyriaTel, a telecommunications provider. Churn prediction is essential in the telecom industry, where losing customers leads to significant revenue loss. By identifying customers likely to leave, SyriaTel can take proactive steps to retain them.
 
-This project aims to build a predictive machine learning classifier that accurately forecasts whether a customer is likely to churn (i.e., stop doing business with SyriaTel). Using a curated dataset of customer demographics, service usage, billing patterns, and support interactions,I conducted a detailed exploratory data analysis (EDA) and develop predictive models to uncover actionable insights.
+The solution is framed as a binary classification problem:
+Will the customer churn? → Yes (1) or No (0)
 
-By detecting churn early, SyriaTel can proactively engage at-risk customers, implement tailored offers, and improve overall customer satisfaction—ultimately reducing churn rates and protecting long-term revenue.
-
-
-# BUSINESS UNDERSTANDING
+# BUSINESS UNDERSTANDING 
 In the telecom industry, customer retention is a critical business priority due to the high cost of acquiring new customers compared to maintaining existing ones. For SyriaTel, a leading telecommunications provider, customer churn—the percentage of users who stop using the service—is a significant challenge impacting revenue and long-term growth.
 
 Understanding why customers churn and being able to predict who is likely to leave offers a major strategic advantage. If SyriaTel can identify at-risk customers early, it can take proactive measures such as:
@@ -19,6 +17,11 @@ Offering targeted promotions or personalized plans,
 Improving service quality based on user feedback,
 
 Enhancing customer support for high-risk segments.
+
+**Stakeholder Audience**
+Business stakeholders (marketing, customer success, operations): need insights on at-risk customers and actionable strategies to reduce churn.
+
+Technical stakeholders (data analysts, ML engineers): interested in modeling approach, evaluation metrics, and deployment considerations.
 
 # PROBLEM STATEMENT
 In today’s highly competitive telecommunications sector, customers have a wide array of service providers to choose from, making customer loyalty increasingly fragile. A single poor experience can shape a customer’s perception of an entire brand, highlighting the critical importance of customer satisfaction in retaining users. With communication services deeply embedded in our daily routines, minimizing customer churn has become a strategic priority for telecom companies.
@@ -76,15 +79,18 @@ Decision Tree Classifier: Achieved 92.9% accuracy with better balance between pr
 
 Model Evaluation Metrics:
 
-Confusion Matrix
+Metric	                                                
+Accuracy	                                                               
+Precision	
+Recall	
+F1 Score	
+ROC AUC Score	
+True Positives (TP)
+False Positives (FP)	
+True Negatives (TN)	
+False Negatives (FN)	
 
-Accuracy Score
-
-F1 Score
-
-ROC Curve (for visual comparison of model performance)
-
-# DATA INSIGHTS
+# DATA VISUALIZATIONS
 
 **1. Customer Churn Distribution**
 
@@ -147,44 +153,54 @@ Insight: Differences in usage behavior (e.g., total day minutes, intl charge, cu
 
 Business Implication: These behavioral indicators are useful for segmenting high-risk customers for targeted retention strategies.
 
+# MODELING
+Several classification models were trained to predict churn:
+
+Logistic Regression
+
+Decision Tree Classifier
+
+
+
+# EVALUATION
+Two models were evaluated to predict customer churn: Logistic Regression and a Decision Tree Classifier. While both achieved strong overall performance, the Decision Tree outperformed Logistic Regression in key areas.
+
+Decision Tree achieved the highest Accuracy (0.91), Precision (0.69), Recall (0.68), and F1 Score (0.68), making it the best model overall.
+
+Logistic Regression, while slightly ahead in ROC AUC (0.81 vs 0.812), had a much lower Recall (0.26), meaning it missed many actual churners.
+
+In churn prediction, Recall is especially important as it measures how well the model identifies customers likely to leave.
+
+The Decision Tree model was therefore selected as the final model due to its balanced and strong performance across metrics, especially in identifying customers at risk of churning.
+
+
 
 # FINDINGS
-1. Customer Churn Is Predictable
-Certain behavioral patterns and service features strongly correlate with customer churn.
-Like, customers with frequent customer service calls or those subscribed to international plans were more likely to leave.
 
-2. Not All Customers Are Equal
-The churners were a minority in the data, but the cost of losing them is disproportionately high, especially if they are high-usage or long-tenure customers.
+A significant number of churned customers share similar behavioral patterns—such as shorter tenures, higher monthly charges, or lack of contract commitments.
 
-4. Decision Tree Model Outperformed Others
-Compared two models:Logistic Regression had high overall accuracy (86%) but poor performance in identifying actual churners (F1-score: 0.31). Decision Tree achieved better balance (Accuracy: 93%, F1-score: 0.76), making it more suitable for churn detection.
-This indicates that churn is not linearly separable, and more complex decision boundaries help.
+The Decision Tree model was best at identifying customers likely to churn, achieving:
 
-5. Service-Related Frustrations Drive Churn
-Features such as customer service call frequency were among the top predictors.
-This shows that dissatisfaction and unresolved issues are early warning signs.
+Accuracy: 91%
+
+Recall: 68% — meaning it successfully identified most churners
+
+F1 Score: 0.68 — showing a good balance between precision and recall
+
+Logistic Regression, while slightly better in ROC AUC, missed more actual churners (lower recall).
+
 
 # RECOMMENDATIONS
-1. Use Predictive Models in Business Operations
-Implement churn prediction systems like the Decision Tree model in CRM workflows.
-Enable real-time alerts for customers at high risk of churn, so teams can act proactively.
 
-2. Prioritize At-Risk Customers
-Use the model’s output to flag and prioritize high-value customers likely to churn.
-Combine predictions with customer lifetime value (CLV) to target interventions cost-effectively.
+Focus retention strategies on customers with:
 
-3. Improve Customer Service Experience
-Monitor customers making repeated service calls.
-Provide faster resolution, better first-call handling, and possibly assign dedicated agents to high-risk segments.
+Month-to-month contracts
 
-4. Design Retention Campaigns Based on Data
-Offer custom incentives or packages to customers predicted to churn.
-Address specific friction points (e.g., billing confusion, limited international features).
+High service charges
 
-5. Track and Re-train the Model
-Customer behavior changes over time.
-Retrain models quarterly using the most recent data to keep predictions accurate.
 
-6. Test and Measure
-A/B test intervention strategies (e.g., proactive calls, loyalty discounts) and measure churn rate reduction over time.
-Use the model to test whether personalized retention strategies yield higher ROI than blanket campaigns.
+Monitor high-risk segments identified by the model and intervene early (e.g., with discounts, loyalty programs, or personalized offers).
+
+Regularly retrain and evaluate the model to adapt to evolving customer behavior and improve performance.
+
+Consider enhancing the dataset with customer engagement data (e.g., support calls, usage patterns) to improve future predictions.
