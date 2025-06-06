@@ -78,17 +78,17 @@ Decision Tree Classifier: Achieved 92.9% accuracy with better balance between pr
 
 
 Model Evaluation Metrics:
+	                                                
+Accuracy
 
-Metric	                                                
-Accuracy	                                                               
-Precision	
-Recall	
-F1 Score	
+Precision
+
+Recall
+
+F1 Score
+
 ROC AUC Score	
-True Positives (TP)
-False Positives (FP)	
-True Negatives (TN)	
-False Negatives (FN)	
+	
 
 # DATA VISUALIZATIONS
 
