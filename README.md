@@ -76,9 +76,9 @@ Analyzed churn across multiple variables using grouped bar plots and color-coded
 
 Models Used:
 
-Logistic Regression: Achieved 85.8% accuracy but had low recall for churned customers.
+Logistic Regression: Achieved 86% accuracy but had low recall for churned customers.
 
-Decision Tree Classifier: Achieved 92.9% accuracy with better balance between precision and recall.
+Decision Tree Classifier: Achieved 91% accuracy with better balance between precision and recall.
 
 
 Model Evaluation Metrics:
