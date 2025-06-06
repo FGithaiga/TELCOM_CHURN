@@ -2,7 +2,12 @@
 
 
 # PROJECT OVERVIEW
-This project builds a machine learning model to predict customer churn for SyriaTel, a telecommunications provider. Churn prediction is essential in the telecom industry, where losing customers leads to significant revenue loss. By identifying customers likely to leave, SyriaTel can take proactive steps to retain them.
+
+In the highly competitive telecommunications sector, retaining existing customers is just as crucial—if not more—than acquiring new ones. SyriaTel, like many telecom providers, faces significant revenue loss due to customer churn—the rate at which customers discontinue their service. Identifying customers who are likely to leave and understanding the factors driving that decision is key to improving retention strategies and optimizing service delivery.
+
+This project aims to build a predictive machine learning classifier that accurately forecasts whether a customer is likely to churn (i.e., stop doing business with SyriaTel). Using a curated dataset of customer demographics, service usage, billing patterns, and support interactions,I conducted a detailed exploratory data analysis (EDA) and develop predictive models to uncover actionable insights.
+
+By detecting churn early, SyriaTel can proactively engage at-risk customers, implement tailored offers, and improve overall customer satisfaction—ultimately reducing churn rates and protecting long-term revenue.
 
 The solution is framed as a binary classification problem:
 Will the customer churn? → Yes (1) or No (0)
