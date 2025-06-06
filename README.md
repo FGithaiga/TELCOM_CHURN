@@ -19,9 +19,12 @@ Improving service quality based on user feedback,
 Enhancing customer support for high-risk segments.
 
 **Stakeholder Audience**
-Business stakeholders (marketing, customer success, operations): need insights on at-risk customers and actionable strategies to reduce churn.
 
-Technical stakeholders (data analysts, ML engineers): interested in modeling approach, evaluation metrics, and deployment considerations.
+Business stakeholders with the aim of marketing, customer success, operation: need insights on at-risk customers and actionable strategies to reduce churn.
+
+**Technical stakeholders**
+
+Data analysts, ML engineers: interested in modeling approach, evaluation metrics, and deployment considerations.
 
 # PROBLEM STATEMENT
 In today’s highly competitive telecommunications sector, customers have a wide array of service providers to choose from, making customer loyalty increasingly fragile. A single poor experience can shape a customer’s perception of an entire brand, highlighting the critical importance of customer satisfaction in retaining users. With communication services deeply embedded in our daily routines, minimizing customer churn has become a strategic priority for telecom companies.
