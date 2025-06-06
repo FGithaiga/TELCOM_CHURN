@@ -35,6 +35,7 @@ By leveraging predictive modeling and generating actionable insights, telecom fi
 
 
 # DATA UNDERSTANDING
+
 **1. Data Collection and Preparation**
 Dataset: Used SyriaTel's dataset containing 3,333 customer records with 21 features including demographics, service usage, call durations, and plan subscriptions.
 
@@ -166,6 +167,7 @@ Decision Tree Classifier
 
 
 # EVALUATION
+
 Two models were evaluated to predict customer churn: Logistic Regression and a Decision Tree Classifier. While both achieved strong overall performance, the Decision Tree outperformed Logistic Regression in key areas.
 
 Decision Tree achieved the highest Accuracy (0.91), Precision (0.69), Recall (0.68), and F1 Score (0.68), making it the best model overall.
