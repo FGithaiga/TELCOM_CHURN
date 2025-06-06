@@ -1,4 +1,4 @@
-# PROJECT TITLE :  SYRIALTEL CUSTOMER CHURN PREDICTION
+# PROJECT TITLE :  SYRIAL TEL CUSTOMER CHURN PREDICTION
 
 
 # PROJECT OVERVIEW
@@ -19,9 +19,12 @@ Improving service quality based on user feedback,
 Enhancing customer support for high-risk segments.
 
 **Stakeholder Audience**
-Business stakeholders (marketing, customer success, operations): need insights on at-risk customers and actionable strategies to reduce churn.
 
-Technical stakeholders (data analysts, ML engineers): interested in modeling approach, evaluation metrics, and deployment considerations.
+Business stakeholders with the aim of marketing, customer success, operation: need insights on at-risk customers and actionable strategies to reduce churn.
+
+**Technical stakeholders**
+
+Data analysts, ML engineers: interested in modeling approach, evaluation metrics, and deployment considerations.
 
 # PROBLEM STATEMENT
 In today’s highly competitive telecommunications sector, customers have a wide array of service providers to choose from, making customer loyalty increasingly fragile. A single poor experience can shape a customer’s perception of an entire brand, highlighting the critical importance of customer satisfaction in retaining users. With communication services deeply embedded in our daily routines, minimizing customer churn has become a strategic priority for telecom companies.
@@ -32,6 +35,7 @@ By leveraging predictive modeling and generating actionable insights, telecom fi
 
 
 # DATA UNDERSTANDING
+
 **1. Data Collection and Preparation**
 Dataset: Used SyriaTel's dataset containing 3,333 customer records with 21 features including demographics, service usage, call durations, and plan subscriptions.
 
@@ -72,23 +76,23 @@ Analyzed churn across multiple variables using grouped bar plots and color-coded
 
 Models Used:
 
-Logistic Regression: Achieved 85.8% accuracy but had low recall for churned customers.
+Logistic Regression: Achieved 86% accuracy but had low recall for churned customers.
 
-Decision Tree Classifier: Achieved 92.9% accuracy with better balance between precision and recall.
+Decision Tree Classifier: Achieved 91% accuracy with better balance between precision and recall.
 
 
 Model Evaluation Metrics:
+	                                                
+Accuracy
 
-Metric	                                                
-Accuracy	                                                               
-Precision	
-Recall	
-F1 Score	
+Precision
+
+Recall
+
+F1 Score
+
 ROC AUC Score	
-True Positives (TP)
-False Positives (FP)	
-True Negatives (TN)	
-False Negatives (FN)	
+	
 
 # DATA VISUALIZATIONS
 
@@ -163,6 +167,7 @@ Decision Tree Classifier
 
 
 # EVALUATION
+
 Two models were evaluated to predict customer churn: Logistic Regression and a Decision Tree Classifier. While both achieved strong overall performance, the Decision Tree outperformed Logistic Regression in key areas.
 
 Decision Tree achieved the highest Accuracy (0.91), Precision (0.69), Recall (0.68), and F1 Score (0.68), making it the best model overall.
